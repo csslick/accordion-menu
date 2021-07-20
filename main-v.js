@@ -4,6 +4,7 @@ window.onload = function() {
 
   const dt = document.querySelectorAll('.faq dt');
 
+  // DOM click 순회
   for(let i = 0; i < dt.length; i++) {
     dt[i].addEventListener('click', function(){
       for(let j = 0; j < dt.length; j++){
@@ -21,6 +22,7 @@ window.onload = function() {
         console.log(this.children[0])
         this.children[0].classList.add('up')
       } else {
+        // 닫혔을 때
         this.children[0].classList.remove('up')
       }
     });
